@@ -1,0 +1,618 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: #b62e1d;
+  background: #edd155;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+h2,h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.heading {
+  margin: 3.5vw;
+}
+
+
+#h1-01 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3vw;
+}
+
+
+.h2-01 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: left;
+  font-size: 6.5vw;
+  color: rgb(224, 224, 224);
+  padding: 3.5vw;
+  font-weight: 800;
+}
+
+#p-01 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: left;
+  font-size: 2vw;
+  color: black;
+  margin: 2vw;
+  float: left;
+}
+
+#sp-01 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  font-size: 6.5vw;
+  color: #9e2919;
+}
+
+
+#sp-02 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  font-size: 6.5vw;
+  color: hsl(45, 97%, 48%);
+}
+
+
+#sp-03 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  font-size: 6.5vw;
+  color: black;
+}
+
+.sp-04 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 4.5vw;
+  float: left;
+  margin: 6vw;
+  color: #efeeee;
+  font-weight: 800;
+  text-align: left;
+}
+
+
+.sp-05 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 4.5vw;
+  float: right;
+  margin: 6vw;
+  font-weight: 800;
+  text-align: right;
+ 
+}
+
+
+#div-01 {
+  background-size: contain;
+  background-position: center;
+  background-image: url("about.banner.jpg");
+  background-size: 100% 350%;
+  margin: 0;
+  padding: 0;
+}
+
+#div-02 {
+  background-size: contain;
+  background-position: center;
+  background-image: url("history.banner.jpg");
+  background-size: 100% 350%;
+  margin: 0;
+  padding: 0;
+}
+
+#div-03 {
+  background-size: contain;
+  background-position: center;
+  background-image: url("instruments.banner.jpg");
+  background-size: 100% 500%;
+  margin: 0;
+  padding: 0;
+}
+
+#div-04 {
+  background-size: contain;
+  background-position: center;
+  background-image: url("pitch.banner.jpg");
+  background-size: 100% 500%;
+  margin: 0;
+  padding: 0;
+}
+
+#div-05 {
+  background-size: contain;
+  background-position: center;
+  background-image: url("rhythm.banner.jpg");
+  background-size: 100% 400%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#iframe-1 {
+  width: 89vw;
+  height: 60vw;
+  margin: 5vw;
+}
+
+#iframe-2 {
+  width: 50vw;
+  height: auto;
+  padding: 2vw;
+}
+
+.nav {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5vw;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  width: 100%;
+}
+
+.navigation-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav-li {
+  float: left;
+}
+
+.nav-li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vw 1.2vw;
+  text-decoration: none;
+}
+
+.nav-li a:hover {
+  background-color: #111;
+}
+
+
+.nav-li {
+  border-right: 0.1vw solid #bbb;
+}
+
+.nav-li:last-child {
+  border-right: none;
+}
+
+
+#active {
+  background-color: #9e2919;
+}
+
+.history-heading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  padding: 1vw;
+  font-weight: 800;
+}
+
+
+.history-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  padding: 1vw;
+}
+
+
+.float-1 {
+  float: right;
+}
+
+
+.float-2 {
+  float: left;
+}
+
+
+.homepage-float {
+  margin: 4vw;
+  width: 42vw;
+  height: 36vw;
+}
+
+#eth-1{
+  margin: 2vw;
+  width: 32vw;
+  height: 28vw;
+  float: right;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.black-background {
+  background-color: #2c2c2c;
+  margin: 3.5vw;
+}
+
+
+.gray-background {
+  background-color: #d0d0d0;
+  margin: 3.5vw;
+}
+
+
+.red-button {
+  background-color: #9e2919;
+  border: none;
+  color: white;
+  padding: 0.8vw 1.4vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4vw;
+  transition-duration: 0.4s;
+}
+
+
+.red-button:hover {
+  background-color: #9e2919;
+  color: white;
+  font-size: 1.62vw;
+  padding: 0.8vw 1.4vw;
+}
+
+
+.yellow-button {
+  background-color: #ffc000;
+  border: none;
+  color: black;
+  padding: 0.8vw 1.4vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4vw;
+  transition-duration: 0.5s;
+}
+
+
+.yellow-button:hover {
+  background-color: #ffc000;
+  color: black;
+  font-size: 1.62vw;
+  padding: 0.8vw 1.4vw;
+}
+
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2b2b2b;
+  color: white;
+  text-align: left;
+  padding: 1vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5vw;
+}
+
+.history-div {
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  width: 50vw;
+  max-width: 100%;
+  max-height: 100%
+}
+
+th, td {
+  border-style: ridge;
+  font-size: 1.5vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 0.5vw;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-collapse: collapse;
+}
+
+.table {
+  width: 87.5vw;
+  border-collapse: collapse;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom:5vw;
+  border: none;
+}
+
+.table-br {
+  background-color: #2c2c2c;
+  background-size: 100vw;
+}
+
+.table-container {
+  width: 50%;
+}
+
+.table, .table th, .table td {
+  border: 0.75vw solid #2c2c2c;
+  text-align: left;
+  padding: 1vw;
+}
+
+th, td {
+  background-color: #323232;
+}
+
+.table tr:first-child th {
+  background: none;
+  font-size: 2vw;
+  font-weight: 900;
+}
+
+#suggestion-box {
+  padding: 3.5vw;
+  text-align: left;
+  font-size: 3vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+}
+
+input[type=text] {
+  width: 40%;
+  padding: 0.75vw;
+  margin: 1.75vw 0;
+  box-sizing: border-box;
+  background-color: rgb(234, 234, 234);
+}
+
+input[type=text]:focus {
+  background-color: rgb(255, 255, 255);
+  font-family: "Plus Jakarta Sans", sans-serif; 
+}
+
+input[type=submit]{
+  background-color: #fecb31;
+  border: none;
+  color: black;
+  padding: 1.5vw 2.25vw;
+  text-decoration: none;
+  margin: 1vw 0.5vw;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vw;
+}
+
+#submit-button:hover {
+  background-color:#ffde5a;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vw;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 3vw;
+  padding: 5vw;
+  color: black;
+  font-weight: bold;
+  font-size: 4vw;
+  transition: 0.6s ease;
+  border-radius: 2vw 2vw 2vw 2vw;
+  user-select: none;
+  margin: 5vw;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(203, 203, 203, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 2vw;
+  width: 2vw;
+  margin: 0 1vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 5vw;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideshow-picture {
+  width: 30vw;
+  height: 30vw;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  margin-top: 10vw
+}
+
+.slideshow-picture:hover {
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+
+.slideshow-picture:not(:hover) {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+.instruments-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vw;
+  float: left;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 3vw;
+  margin-bottom: 6vw;
+  color: #000000;
+  text-align: center;
+}
+
+.instrument-picture {
+  margin-left: 37vw;
+  margin-right: 35vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  width: 25vw;
+  height: 36vw;
+  display: block;
+}
+
+#instrument-quiz {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2.25vw;
+  text-align: center
+}
+
+#submit-instruments {
+  background-color: #fecb31;
+  border: none;
+  color: black;
+  padding: 1.5vw 2.25vw;
+  text-decoration: none;
+  margin: 1vw 0.5vw;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vw;
+  margin-bottom: 3vw;
+}
+
+#submit-instruments:hover {
+  background-color:#ffde5a;
+}
+
+.middle-text {
+  font-size: 2vw;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding-top: 1vw;
+}
+
+.scale-photo {
+  width: 50vw;
+  height: auto;
+  padding: 2vw;
+}
+
+ul.a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  font-size: 3vw;
+}

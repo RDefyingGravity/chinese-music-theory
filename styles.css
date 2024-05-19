@@ -149,9 +149,12 @@ h2,h3 {
 
 
 #iframe-1 {
-  width: 89vw;
-  height: 60vw;
-  margin: 5vw;
+  width: 75vw;
+  height: 50vw;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 #iframe-2 {
@@ -562,7 +565,7 @@ input[type=submit]{
 }
 
 .instrument-picture {
-  margin-left: 37vw;
+  margin-left: 35vw;
   margin-right: 35vw;
   margin-top: 3vw;
   margin-bottom: 3vw;
@@ -615,4 +618,8 @@ ul.a {
   font-family: "Plus Jakarta Sans", sans-serif;
   text-align: center;
   font-size: 3vw;
+}
+
+body {
+    overflow-x: hidden;
 }

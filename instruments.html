@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Instruments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    </head>
+    <body>
+        <header>
+            <div id="div-03">
+                <h2 class="h2-01">INSTRUMENTS</h2>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation-bar">
+                <li class="nav-li"><a class="nav" href="index.html">HOME</a></li>
+                <li class="nav-li"><a class="nav" href="pitch.html">PITCH</a></li>
+                <li class="nav-li"><a class="nav" href="rhythm.html">RHYTHM</a></li>
+                <li class="nav-li"><a class="nav" href="instruments.html" id="active">INSTRUMENTS</a></li>
+                <li class="nav-li"><a class="nav" href="history.html">HISTORY</a></li>
+                <li class="nav-li" style="float:right"><a class="nav" href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="slideshow-container">
+              <div class="mySlides fade">
+                <img class="slideshow-picture" src="erhu-1.jpg">
+              </div>
+              <div class="mySlides fade">
+                <img class="slideshow-picture" src="sheng-1.jpg">
+              </div> 
+              <div class="mySlides fade">
+                <img class="slideshow-picture" src="pipa-1.jpg">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script>
+              let slideIndex = 1;
+              showSlides(slideIndex);
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+            <section>
+              <ul class="a">
+                <li>Pipa</li>
+                <li>Luo</li>
+                <li>Dizi</li>
+                <li>Xiao</li>
+                <li>Yunluo</li>
+              </ul>
+              <p class="instruments-text">
+                The pipa, pípá, or p'i-p'a (Chinese: 琵琶) is a
+                traditional Chinese musical instrument 
+                belonging to the plucked category of 
+                instruments. Sometimes called the "Chinese 
+                lute", the instrument has a pear-shaped 
+                wooden body with a varying number of frets 
+                ranging from 12 to 31.
+              </p>
+              <img class="instrument-picture" src="pipa-2.jpg" alt="Pipa">
+            </section>
+            <section>
+              <p class="instruments-text">
+                The luo (a generic term for gong) is found in a 
+                variety of sizes and, unlike the cymbal (bo), is 
+                tuned and is characterized by a quick rise in pitch 
+                after it is struck.
+              </p>
+              <img class="instrument-picture" src="luo-1.jpg" alt="Luo">
+            </section>
+            <section>
+              <p class="instruments-text">
+                The dizi (Chinese: 笛子; pinyin: dízi, pronounced [tǐt͡sɨ]), 
+                is a Chinese transverse flute. It is also sometimes known as 
+                the di (笛) or héngdi (橫笛), and has varieties including Qudi 
+                (曲笛), Bangdi (梆笛), and Xindi (新笛). It is a major Chinese 
+                musical instrument that is widely used in many genres of Chinese 
+                folk music, Chinese opera, as well as the modern Chinese orchestra. 
+                The dizi is also a popular instrument among the Chinese people as 
+                it is simple to make and easy to carry.
+              </p>
+              <img class="instrument-picture" src="dizi-1.jpg" alt="Dizi">
+            </section>
+            <section>
+              <p class="instruments-text">
+                The xiao (simplified Chinese: 箫; traditional Chinese: 簫; pinyin: xiāo; 
+                Wade–Giles: hsiao; Jyutping: siu1, pronounced [ɕi̯ɑ́ʊ̯]) is a Chinese 
+                vertical end-blown flute. It is generally made of bamboo. It is also 
+                sometimes called dòngxiāo (洞箫; 洞簫), dòng meaning "hole." An ancient 
+                name for the xiāo is shùzhúdí (豎竹笛, lit. "vertical bamboo flute", 
+                [ʂûtʂutǐ]) but the name xiāo in ancient times also included the side-blown 
+                bamboo flute, dizi.
+              </p>
+              <img class="instrument-picture" src="xiao-1.jpg" alt="Xiao">
+            </section>
+            <section>
+              <p class="instruments-text">
+                Yunluo, Chinese gong chime usually consisting of 10 gongs that are suspended 
+                in individual compartments on a wooden frame and beaten with sticks that have 
+                hard or soft tips.
+              </p>
+              <img class="instrument-picture" src="yunluo-1.jpg" alt="Yunluo">
+            </section>
+            <form id="instrument-quiz">
+              <br><h2></b>Test Yourself</h2><br>
+              <p><strong>Which Instrument Is Typically Struck With A Mallet?</strong></p><br>
+              <input type="radio" name="Question 1" value="Pipa">
+              <label for="Pipa">Pipa</label><br><br>
+              <input type="radio" name="Question 1" value="Trumpet">
+              <label for="Trumpet">Trumpet</label><br><br>
+              <input type="radio" name="Question 1" value="Luo" id="correct-1">
+              <label for="Luo">Luo</label><br><br>
+              <br>
+              <p><strong>Which Instrument Is Sometimes Called The "Chinese Lute"?</strong></p><br>
+              <input type="radio" name="Question 2" value="Harp">
+              <label for="Pipa">Harp</label><br><br>
+              <input type="radio" name="Question 2" value="Pipa" id="correct-2">
+              <label for="Trumpet">Pipa</label><br><br>
+              <input type="radio" name="Question 2" value="Guzheng">
+              <label for="Luo">Guzheng</label><br><br>
+              <br>
+              <p><strong>Which Instrument Has Gongs Suspended Into Individual Compartments?</strong></p><br>
+              <input type="radio" name="Question 3" value="Tam-Tam">
+              <label for="Pipa">Tam-Tam</label><br><br>
+              <input type="radio" name="Question 3" value="Sitar">
+              <label for="Trumpet">Sitar</label><br><br>
+              <input type="radio" name="Question 3" value="Yunluo"  id="correct-3">
+              <label for="Luo">Yunluo</label><br><br>
+              <br>
+              <p><strong>Which Instrument Is A Transverse Flute?</strong></p><br>
+              <input type="radio" name="Question 4" value="Dizi" id="correct-4">
+              <label for="Pipa">Dizi</label><br><br>
+              <input type="radio" name="Question 4" value="Oboe">
+              <label for="Trumpet">Oboe</label><br><br>
+              <input type="radio" name="Question 4" value="Flute">
+              <label for="Luo">Flute</label><br><br>
+              <br>
+              <p><strong>Which Instrument Is A Vertical End Blown Flute?</strong></p><br>
+              <input type="radio" name="Question 5" value="Clarinet">
+              <label for="Pipa">Clarinet</label><br><br>
+              <input type="radio" name="Question 5" value="Xiao" id="correct-5">
+              <label for="Trumpet">Xiao</label><br><br>
+              <input type="radio" name="Question 5" value="Erhu">
+              <label for="Luo">Erhu</label><br>
+              <br>
+              <input type="submit" value="SUBMIT" id="submit-instruments">
+            </form>
+        </main>
+        <div id="modal-1" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"><i>Your score is </i></p>
+          </div>
+        </div>
+        
+        <script>
+          function result(){
+            var score = 0;
+            if (document.getElementById('correct-1').checked) {
+              score++;
+            }
+            if (document.getElementById('correct-2').checked) {
+              score++;
+            }
+            if (document.getElementById('correct-3').checked) {
+              score++;
+            }
+            if (document.getElementById('correct-4').checked) {
+              score++;
+            }
+            if (document.getElementById('correct-5').checked) {
+              score++;
+            }
+        
+            // Update the modal text with the score
+            document.getElementById('modal-text').innerHTML = "Your score is " + score + ".";
+          }
+        
+          var modal = document.getElementById("modal-1");
+          var btn = document.getElementById("submit-instruments");
+          var span = document.getElementsByClassName("close")[0];
+        
+          btn.onclick = function(event) {
+            event.preventDefault();
+            result(); // Calculate and update the score
+            modal.style.display = "block";
+          }
+        
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+        
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
+        </script>
+        <footer>
+            <div class="footer">
+                <p><b>Rishank Lahkar</b><br>
+                    CT19 5JY<br>
+                    <i>The Harvey Grammar School</i>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

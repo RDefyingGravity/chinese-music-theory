@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1 id="h1-01">WELCOME TO<br>
+            <span id="sp-01">chinese</span><span id="sp-02">musictheory</span><span id="sp-03">.com</span></h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation-bar">
+            <li class="nav-li"><a class="nav" id="active" href="index.html">HOME</a></li>
+            <li class="nav-li"><a class="nav" href="pitch.html">PITCH</a></li>
+            <li class="nav-li"><a class="nav" href="rhythm.html">RHYTHM</a></li>
+            <li class="nav-li"><a class="nav" href="instruments.html">INSTRUMENTS</a></li>
+            <li class="nav-li"><a class="nav" href="history.html">HISTORY</a></li>
+            <li class="nav-li" style="float:right"><a class="nav" href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="clearfix black-background">
+            <h2><span class="sp-04">Learn <br>Something<br> About<br> Chinese<br> Scales<br>
+            <a href="pitch.html"><button class="red-button" aria-label="Learn about Chinese Scales">PITCH</button></a></span>
+            <img class="float-1 homepage-float" src="scale-example.jpg" alt="Example of Chinese Scale">
+            </h2>
+        </section>
+        <section class="clearfix gray-background">
+            <h2><span class="sp-05">Or Have<br> a Look <br>at Some <br>Chinese <br>Instruments<br>
+            <a href="instruments.html"><button class="yellow-button" aria-label="Learn about Chinese Instruments">INSTRUMENTS</button></a></span>
+            <img class="float-2 homepage-float" src="guzheng-1.jpg" alt="Guzheng">
+            </h2>
+        </section>
+        <section class="clearfix black-background">
+            <h2><span class="sp-04">Have a<br>Look at How<br> Chinese <br>Music<br> Developed<br>
+            <a href="history.html"><button class="red-button" aria-label="Learn about the History of Chinese Music">HISTORY</button></a></span>
+            <img class="float-1 homepage-float" src="development.jpg" alt="Development of Chinese Music">
+            </h2>
+        </section>
+        <section class="clearfix gray-background">
+            <h2><span class="sp-05">Or Learn<br> About Why <br>We Made <br>This Page<br>
+            <a href="about.html"><button class="yellow-button" aria-label="Learn about this page">ABOUT</button></a></span>
+            <img class="float-2 homepage-float" src="eth-2.jpg" alt="Chinese Culture">
+            </h2>
+        </section>
+        <section class="table-br">
+            <br>
+            <div class="table-container">
+                <table class="table">
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th width="40%">Other Sites</th>
+                        <th width="40%">This Site</th>
+                    </tr>
+                    <tr>
+                        <th width="20%">Topic</th>
+                        <th colspan="2">Availability</th>
+                    </tr>
+                    <tr>
+                        <td>Pitch</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Rhythm</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Exercises</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Quizzes</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>History</td>
+                        <td>No</td>
+                        <td>Yes</td>            
+                    </tr>
+                    <tr>
+                        <td>Examples</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </section>
+        <section class="clearfix gray-background">
+        <img class="float-1 homepage-float" src="email.jpg">
+            <form id="suggestion-box">
+                <label for="fname">Name</label><br>
+                <input type="text" id="name" name="name" value=""><br><br>
+                <label for="lname">Suggestion</label><br>
+                <input type="text" id="info" name="info" value=""><br><br>
+                <input type="submit" value="SUBMIT" id="submit-button">
+            </form>
+            </h2>
+        </section>
+    </main>
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"><i>Your suggestion has been submitted.</i></p>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("modal-1");
+    
+        // Get the button that opens the modal
+        var btn = document.getElementById("submit-button");
+    
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+    
+        // Get the form element
+        var form = document.getElementById("suggestion-box");
+    
+        // When the user clicks the button, open the modal 
+        btn.onclick = function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+            modal.style.display = "block";
+        }
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <footer>
+        <div class="footer">
+            <p><b>Rishank Lahkar</b><br>
+            CT19 5JY<br>
+            <i>The Harvey Grammar School</i></p>
+        </div>
+    </footer>
+</body>
+</html>
